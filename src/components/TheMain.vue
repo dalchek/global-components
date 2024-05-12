@@ -1,10 +1,15 @@
 <template>
-    <section class="main"></section>
+    <section class="main">
+        <CourseCard />
+    </section>
 </template>
 
 <script>
+    import CourseCard from './CourseCard.vue'
     export default {
-
+        components : {
+            CourseCard
+        }
     }
 
 </script>
@@ -13,5 +18,9 @@
 .main {
     height: 500px;
     background-color: paleturquoise;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
+
 </style>
