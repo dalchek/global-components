@@ -1,6 +1,6 @@
 <template>
     <header>
-        <register-button></register-button>
+        <RegisterButton />
     </header>
 </template>
  
@@ -8,7 +8,7 @@
     import RegisterButton from "./RegisterButton.vue";
     export default {
         components : {
-            'register-button' : RegisterButton
+            RegisterButton
         }
     }
 </script>
