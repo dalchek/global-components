@@ -1,12 +1,13 @@
 <template>
     <section class="main">
-        <CourseCard />
+        <CourseCard v-for="course in courses" :course="course" />
     </section>
 </template>
 
 <script>
     import CourseCard from './CourseCard.vue'
     export default {
+        props : ['courses'],
         components : {
             CourseCard
         }
